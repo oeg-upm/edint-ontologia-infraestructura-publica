@@ -8,6 +8,7 @@
 <https://edint.es/def/infraestructura> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
 <https://edint.es/def/infraestructura> <http://purl.org/dc/terms/description> "La ontología de infraestructura describe todos los conceptos relacionados con las instalaciones públicas y privadas de un municipio.  Estas incluyen aparcamientos dentro y fuera de la vía pública, bibliotecas, centros de salud, centros sociales, juzgados, comisarías, centros educativos, entre otros."@es .
 <https://edint.es/def/infraestructura> <http://purl.org/dc/terms/description> "The infrastructure ontology describes all concepts related to a municipality's public and private facilities. These include on-street and off-street parking, libraries, health centers, community centers, courthouses, police stations, educational centers, among others."@en .
+<https://edint.es/def/infraestructura> <http://purl.org/dc/terms/issued> "2026-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/infraestructura> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://edint.es/def/infraestructura> <http://purl.org/dc/terms/title> "Ontología de Infraestructura"@es .
 <https://edint.es/def/infraestructura> <http://purl.org/dc/terms/title> "The Infrastructure Ontology"@en .
@@ -89,6 +90,9 @@
 # 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # http://www.w3.org/2001/XMLSchema#gYearMonth
 <http://www.w3.org/2001/XMLSchema#gYearMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .

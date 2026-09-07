@@ -16,6 +16,7 @@
                                                                            "Socorro Bernardos" ;
                                         <http://purl.org/dc/terms/description> "La ontología de infraestructura describe todos los conceptos relacionados con las instalaciones públicas y privadas de un municipio.  Estas incluyen aparcamientos dentro y fuera de la vía pública, bibliotecas, centros de salud, centros sociales, juzgados, comisarías, centros educativos, entre otros."@es ,
                                                                                "The infrastructure ontology describes all concepts related to a municipality's public and private facilities. These include on-street and off-street parking, libraries, health centers, community centers, courthouses, police stations, educational centers, among others."@en ;
+                                        <http://purl.org/dc/terms/issued> "2026-01-30"^^xsd:date ;
                                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                         <http://purl.org/dc/terms/title> "Ontología de Infraestructura"@es ,
                                                                          "The Infrastructure Ontology"@en ;
@@ -106,6 +107,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML
 rdf:HTML rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.w3.org/2001/XMLSchema#gYearMonth

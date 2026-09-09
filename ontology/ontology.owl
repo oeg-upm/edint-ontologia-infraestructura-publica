@@ -20,6 +20,7 @@
      xmlns:s4bldg="http://w3id.org/def/saref4bldg#"
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:edintmi="https://edint.es/def/movilidadinteligente#"
      xmlns:esequip="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#"
      xmlns:edintcat="https://edint.es/def/catastro#"
@@ -1119,7 +1120,8 @@
         <rdfs:comment xml:lang="en">This property allows describing whether there is a recurrence in the incidence or not</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://edint.es/def/trafico"/>
         <rdfs:label xml:lang="es">Incidencia recurrente</rdfs:label>
-        <rdfs:label xml:lang="en">Recurrent incidence</rdfs:label>    
+        <rdfs:label xml:lang="en">Recurrent incidence</rdfs:label> 
+    </owl:DatatypeProperty>
 
 
     <!-- https://edint.es/def/trafico#measurementFrequency -->
@@ -1132,7 +1134,8 @@
         <rdfs:comment xml:lang="en">This property allows to know the measurement frequency of the device.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://edint.es/def/trafico"/>
         <rdfs:label xml:lang="es">Frecuencia Medición</rdfs:label>
-        <rdfs:label xml:lang="en">Measurement Frequency</rdfs:label>    
+        <rdfs:label xml:lang="en">Measurement Frequency</rdfs:label> 
+    </owl:DatatypeProperty>   
 
 
     <!-- https://edint.es/def/trafico#numDirections -->

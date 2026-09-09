@@ -757,6 +757,9 @@
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
@@ -1428,6 +1431,10 @@
   }, {
     "@language" : "en",
     "@value" : "The infrastructure ontology describes all concepts related to a municipality's public and private facilities. These include on-street and off-street parking, libraries, health centers, community centers, courthouses, police stations, educational centers, among others."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-01-30"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"

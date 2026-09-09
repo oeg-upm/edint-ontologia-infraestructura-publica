@@ -22,6 +22,7 @@
         <terms:creator>Socorro Bernardos</terms:creator>
         <terms:description xml:lang="es">La ontología de infraestructura describe todos los conceptos relacionados con las instalaciones públicas y privadas de un municipio.  Estas incluyen aparcamientos dentro y fuera de la vía pública, bibliotecas, centros de salud, centros sociales, juzgados, comisarías, centros educativos, entre otros.</terms:description>
         <terms:description xml:lang="en">The infrastructure ontology describes all concepts related to a municipality&apos;s public and private facilities. These include on-street and off-street parking, libraries, health centers, community centers, courthouses, police stations, educational centers, among others.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-30</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="es">Ontología de Infraestructura</terms:title>
         <terms:title xml:lang="en">The Infrastructure Ontology</terms:title>
@@ -187,6 +188,13 @@
 
 
     <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 

@@ -1,0 +1,1525 @@
+@prefix : <https://edint.es/def/infraestructura#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edintcat: <https://edint.es/def/catastro#> .
+@prefix edinttraf: <https://edint.es/def/trafico#> .
+@prefix edintveh: <https://edint.es/def/censovehiculos#> .
+@prefix edintzone: <https://edint.es/def/zone#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#> .
+@prefix esvehcom: <https://edint.es/def/vehiculos-compartidos#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <https://w3id.org/def/astrea#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://astrea.linkeddata.es/report> a ns1:ShapeReport ;
+    ns1:contains <https://astrea.linkeddata.es/shapes#01c4ae2a568c4225e48b740397251010>,
+        <https://astrea.linkeddata.es/shapes#06f1757c465e7b3e123269c946ba06d0>,
+        <https://astrea.linkeddata.es/shapes#097a9d4a5025630f43b0d6511bcbfc68>,
+        <https://astrea.linkeddata.es/shapes#0e844086fdb25cbf9d4ac00c05ac0ae1>,
+        <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b>,
+        <https://astrea.linkeddata.es/shapes#163744438032c52e32bf3c7c8bb195e8>,
+        <https://astrea.linkeddata.es/shapes#168c1fd91d1e24052e1f18f712b4910b>,
+        <https://astrea.linkeddata.es/shapes#1808ac89bb0f54fc4822ed6c5618e78a>,
+        <https://astrea.linkeddata.es/shapes#1a8a906fbaf4f345422b73ab34a60a5e>,
+        <https://astrea.linkeddata.es/shapes#1b22f04071e0e864530add38191940a6>,
+        <https://astrea.linkeddata.es/shapes#1bc257992e4584fa4ec247decbd920d5>,
+        <https://astrea.linkeddata.es/shapes#1c06f64788ceed887349df530cb225ed>,
+        <https://astrea.linkeddata.es/shapes#1edec7068d03129d92604b36356d00db>,
+        <https://astrea.linkeddata.es/shapes#2085f48b12d7c20673204996726e9b54>,
+        <https://astrea.linkeddata.es/shapes#2198789dee206bc8c362408b14a3f558>,
+        <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98>,
+        <https://astrea.linkeddata.es/shapes#26b421ee22478464eaa7d1487c338fe8>,
+        <https://astrea.linkeddata.es/shapes#27a2f85391a953c339597033f8369bf0>,
+        <https://astrea.linkeddata.es/shapes#294666167c23dc3b30beb10dacc360fb>,
+        <https://astrea.linkeddata.es/shapes#2a5638bb60ea2b6cc9dad6b050cc0c9e>,
+        <https://astrea.linkeddata.es/shapes#2a730e2d33ce1364be8b9148607664e9>,
+        <https://astrea.linkeddata.es/shapes#2b0b3671d0180b7f8c732ad509f26f80>,
+        <https://astrea.linkeddata.es/shapes#2c05aff6cdb8e4832c0587b142f0256d>,
+        <https://astrea.linkeddata.es/shapes#2e9b54f9ea252c6f0ef4a90faed34b85>,
+        <https://astrea.linkeddata.es/shapes#331dd89a581593e0eeda401dd3c4ea0a>,
+        <https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642>,
+        <https://astrea.linkeddata.es/shapes#3398ed0391751bb3a09e0aed51fffdb6>,
+        <https://astrea.linkeddata.es/shapes#33fcc55569a9807a79ec22ae9c9410e8>,
+        <https://astrea.linkeddata.es/shapes#3785ae40f091497ae1f8d118e56e95d4>,
+        <https://astrea.linkeddata.es/shapes#37965e0183e52604b4172e4f7ea4055a>,
+        <https://astrea.linkeddata.es/shapes#37bb8e7ed17a487dd205eec963bd0e1b>,
+        <https://astrea.linkeddata.es/shapes#3e18b0f9fac2d3bdcd51a2fdadcbda53>,
+        <https://astrea.linkeddata.es/shapes#3f423556f5fa0cd190a4d8583ffe51f1>,
+        <https://astrea.linkeddata.es/shapes#415bd07e20b73c4b8fa334aac6b3f198>,
+        <https://astrea.linkeddata.es/shapes#48ea695aa98408a6ade8ae77c99c7bb4>,
+        <https://astrea.linkeddata.es/shapes#496cd065816ca249fb70fde50d7f34a2>,
+        <https://astrea.linkeddata.es/shapes#4dd0d7ae500d06e3cd2f32afa5e1cc97>,
+        <https://astrea.linkeddata.es/shapes#54337af83cb77ebcdf53a471e758202a>,
+        <https://astrea.linkeddata.es/shapes#543ac8de374d7add480a5976bcc55230>,
+        <https://astrea.linkeddata.es/shapes#551747742347c65a3a417153b3f20a07>,
+        <https://astrea.linkeddata.es/shapes#570e251d885fe83c81ffb787ce4307aa>,
+        <https://astrea.linkeddata.es/shapes#5cec87967ef57911da28d5bdb8d563c0>,
+        <https://astrea.linkeddata.es/shapes#5f355806cecf37a7c9edca42f8eb300d>,
+        <https://astrea.linkeddata.es/shapes#5f4045e77929663a03e1192facf1905b>,
+        <https://astrea.linkeddata.es/shapes#642cdeb6abe9fc7e1f7ae276e5cf5fa6>,
+        <https://astrea.linkeddata.es/shapes#684add183383f40ee3e60082fcfcfb39>,
+        <https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7>,
+        <https://astrea.linkeddata.es/shapes#6a6c1a2c510a59ec73b30d6da8edac7e>,
+        <https://astrea.linkeddata.es/shapes#6ddc0b40525de8d44aa81deabedaa0bf>,
+        <https://astrea.linkeddata.es/shapes#70f3c6343f52da6500f95ca0fca6f56e>,
+        <https://astrea.linkeddata.es/shapes#713f24f53cba8bd16e58112f41bb4284>,
+        <https://astrea.linkeddata.es/shapes#724b6e51b8af54a19d919f40c6eaa5f3>,
+        <https://astrea.linkeddata.es/shapes#75d84c602e7eca55bd2d5a7f285e239e>,
+        <https://astrea.linkeddata.es/shapes#79c60e6ec8508361a515263dbabe727e>,
+        <https://astrea.linkeddata.es/shapes#7b75f7c2887fab44d229be6feae8824e>,
+        <https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395>,
+        <https://astrea.linkeddata.es/shapes#82ac0ee2607c4d742aa0dafe16a38558>,
+        <https://astrea.linkeddata.es/shapes#8355820918b8f052e2489eb782a08ab2>,
+        <https://astrea.linkeddata.es/shapes#848f62ef3976824ec8b475fa92c77941>,
+        <https://astrea.linkeddata.es/shapes#87ad31925417d9adcbf2892b37bd5f6f>,
+        <https://astrea.linkeddata.es/shapes#88d50e1fd6d06812076022366fd5092e>,
+        <https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425>,
+        <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047>,
+        <https://astrea.linkeddata.es/shapes#8ef1ba038357601c5128fb6fd422964c>,
+        <https://astrea.linkeddata.es/shapes#91a4b7ea530843a4e68976e03536b0cb>,
+        <https://astrea.linkeddata.es/shapes#9494a5e4502c50cda36778f3e1dd5577>,
+        <https://astrea.linkeddata.es/shapes#955adc73edeafcb26458f931709cb993>,
+        <https://astrea.linkeddata.es/shapes#96ce92d8193727802fa4a189ada10ca4>,
+        <https://astrea.linkeddata.es/shapes#970a52d0d94cd47185d3d51986c6c106>,
+        <https://astrea.linkeddata.es/shapes#993b6589c994d15205e34fdcbae76687>,
+        <https://astrea.linkeddata.es/shapes#999a4ae68ad549a15ec240a3935594c3>,
+        <https://astrea.linkeddata.es/shapes#9e81a8547fd8cabc79752e243c8d2b67>,
+        <https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508>,
+        <https://astrea.linkeddata.es/shapes#a131b8c602cfa0e1668be13f1132494b>,
+        <https://astrea.linkeddata.es/shapes#a631c84768ff3e5f04fb1d6567ba75be>,
+        <https://astrea.linkeddata.es/shapes#ab003d5b5545fc1e3ac8bb504cdc62ad>,
+        <https://astrea.linkeddata.es/shapes#ac612e147d405ab03c3d7ae59fabdc4d>,
+        <https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4>,
+        <https://astrea.linkeddata.es/shapes#b0e4858dd6a7fdf0deca7b1a3e325357>,
+        <https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295>,
+        <https://astrea.linkeddata.es/shapes#b29c323cc06e9c6c8210c13b868f65d7>,
+        <https://astrea.linkeddata.es/shapes#b2bc06896c1c0fbf26f79b1b45f61a1c>,
+        <https://astrea.linkeddata.es/shapes#b6f09ea14b356f677ecafa6b46a9b43c>,
+        <https://astrea.linkeddata.es/shapes#bc319de1f2e369bf3299bf2d999e8f12>,
+        <https://astrea.linkeddata.es/shapes#c0c256e727b3763020e48bab08557125>,
+        <https://astrea.linkeddata.es/shapes#c178cd0fa2ad8fe024ff43f0d6ccb895>,
+        <https://astrea.linkeddata.es/shapes#c31152868dfd36bf465d410b6884b764>,
+        <https://astrea.linkeddata.es/shapes#c5d521f278f928c3b426634a9bca91bf>,
+        <https://astrea.linkeddata.es/shapes#c6267c132b4a367ac0dcd41b18272b04>,
+        <https://astrea.linkeddata.es/shapes#c78adf719f2fc347d9729f079d86324b>,
+        <https://astrea.linkeddata.es/shapes#c8ba0e30ea76a68976d6ab2f0d9ce576>,
+        <https://astrea.linkeddata.es/shapes#c8ea5a736f9d149390fbb1691064012a>,
+        <https://astrea.linkeddata.es/shapes#c97f74c2f03698007cd10836c44bdda2>,
+        <https://astrea.linkeddata.es/shapes#cffb6a5a3d7c32fbfd7bc543565c5167>,
+        <https://astrea.linkeddata.es/shapes#d4c2306b1c47426d30900eff0ad03abc>,
+        <https://astrea.linkeddata.es/shapes#d7d4289d2468461fa170eb3466c479d5>,
+        <https://astrea.linkeddata.es/shapes#d935c1c52c1b4e6a4eb06ad308910bb1>,
+        <https://astrea.linkeddata.es/shapes#d962715fbf72868c0c9961959a58b34e>,
+        <https://astrea.linkeddata.es/shapes#de2a4162216ec8fff7deba5ceb987f5c>,
+        <https://astrea.linkeddata.es/shapes#de7f46aa7197553c2a5de8952fdfe0b8>,
+        <https://astrea.linkeddata.es/shapes#dfc1a249d92ffcc29afe9a80bb567052>,
+        <https://astrea.linkeddata.es/shapes#e30e67ada342f91e399e580a75f7d3c8>,
+        <https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf>,
+        <https://astrea.linkeddata.es/shapes#e61935f1cc0fbdc80be67c061e1cbf71>,
+        <https://astrea.linkeddata.es/shapes#e85f7f569c1b43b31809a79038a33ed0>,
+        <https://astrea.linkeddata.es/shapes#eb84c50e4c74697fb0c1c93ba0fa974c>,
+        <https://astrea.linkeddata.es/shapes#edefab4c5a6c7f1298adbe7978c527d5>,
+        <https://astrea.linkeddata.es/shapes#eef4e9102f8c4e433815a9af41e4f720>,
+        <https://astrea.linkeddata.es/shapes#f0f88a230b15ab1b3a6683269da93a09>,
+        <https://astrea.linkeddata.es/shapes#f148dceb1c2ff8cf72640abbf24c0ba9>,
+        <https://astrea.linkeddata.es/shapes#f19d0a17684b91303d6dc328e9cf2fb7>,
+        <https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c>,
+        <https://astrea.linkeddata.es/shapes#f279402ab37f85caca4ee96619ecf9bb>,
+        <https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220>,
+        <https://astrea.linkeddata.es/shapes#f5a33cb6c2dd457969967849267ed5e2>,
+        <https://astrea.linkeddata.es/shapes#fa78cfbce37dbcb34ab378481e7243c2>,
+        <https://astrea.linkeddata.es/shapes#fb82367f06bc0cbf344782188aae254b>,
+        <https://astrea.linkeddata.es/shapes#fb9875e11739e5b48ce7f56b25dacedd>,
+        <https://astrea.linkeddata.es/shapes#fbbdec372458b6ca648be3b4d8fb667e>,
+        <https://astrea.linkeddata.es/shapes#fbd4ab2d5fae631f5508a529d1eec812>,
+        <https://astrea.linkeddata.es/shapes#fcaeab6b3a84adf7ef5a79afebabed09>,
+        <https://astrea.linkeddata.es/shapes#fccf0bde644b5bb2e7db2db0caafda19>,
+        <https://astrea.linkeddata.es/shapes#fce07d53d29f6d15023cbd797043a83f>,
+        <https://astrea.linkeddata.es/shapes#fd18469ce1a325de553dc7625cbe2b2d>,
+        <https://astrea.linkeddata.es/shapes#fe83e5933031e0c73639829999e1fc92>,
+        <https://astrea.linkeddata.es/shapes#fea379c748c9dad4793c340bbcb92040>,
+        <https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c>,
+        <https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> ;
+    ns1:generatedShapesFrom <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/report/0620946147> a ns1:ReportEntry ;
+    ns1:message """[line: 932, col: 20] Lexical form '2013-03-28' not valid for datatype XSD dateTime
+""" ;
+    ns1:statusCode "206"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#01c4ae2a568c4225e48b740397251010> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#06f1757c465e7b3e123269c946ba06d0> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Verifiable .
+
+<https://astrea.linkeddata.es/shapes#097a9d4a5025630f43b0d6511bcbfc68> a sh:NodeShape ;
+    rdfs:label "Vehicle"@en,
+        "Vehículo"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/censovehiculos> ;
+    sh:description "Self-propelled transport device, along with any attachments, e.g. trailers, that is a legal user of the transportation network (Source: ISO/TS 19091:2019(en))."@en,
+        "Dispositivo de transporte autopropulsado, junto con cualquier accesorio, por ejemplo remolques, que es un usuario legal de la red de transporte (Fuente: ISO/TS 19091:2019(en))."@es ;
+    sh:name "Vehicle"@en,
+        "Vehículo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintveh:Vehicle .
+
+<https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> a sh:NodeShape ;
+    rdfs:label "Time instant"@en,
+        "instante de tiempo."@es ;
+    sh:description "A temporal entity with zero extent or duration"@en,
+        "Una entidad temporal con una extensión o duración cero."@es ;
+    sh:name "Time instant"@en,
+        "instante de tiempo."@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass time:Instant .
+
+<https://astrea.linkeddata.es/shapes#163744438032c52e32bf3c7c8bb195e8> a sh:NodeShape ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/sf#> ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2c05aff6cdb8e4832c0587b142f0256d>,
+        <https://astrea.linkeddata.es/shapes#fea379c748c9dad4793c340bbcb92040> ;
+    sh:targetClass <http://www.opengis.net/ont/sf#Point> .
+
+<https://astrea.linkeddata.es/shapes#1a8a906fbaf4f345422b73ab34a60a5e> a sh:NodeShape ;
+    rdfs:label "Portal" ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+    sh:description "Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]"@es ;
+    sh:name "Portal" ;
+    sh:nodeKind sh:IRI ;
+    sh:not <https://astrea.linkeddata.es/shapes#c178cd0fa2ad8fe024ff43f0d6ccb895> ;
+    sh:targetClass escjr:Portal .
+
+<https://astrea.linkeddata.es/shapes#1b22f04071e0e864530add38191940a6> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Quantifiable .
+
+<https://astrea.linkeddata.es/shapes#1bc257992e4584fa4ec247decbd920d5> a sh:NodeShape ;
+    rdfs:label "Unit" ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:name "Unit" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Unit .
+
+<https://astrea.linkeddata.es/shapes#1edec7068d03129d92604b36356d00db> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#2085f48b12d7c20673204996726e9b54> a sh:NodeShape ;
+    rdfs:label "Urban element"@en,
+        "Elemento urbano"@es ;
+    sh:description "It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc."@en,
+        "Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc."@es ;
+    sh:name "Urban element"@en,
+        "Elemento urbano"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#1808ac89bb0f54fc4822ed6c5618e78a>,
+        <https://astrea.linkeddata.es/shapes#5cec87967ef57911da28d5bdb8d563c0> ;
+    sh:targetClass :UrbanElement .
+
+<https://astrea.linkeddata.es/shapes#26b421ee22478464eaa7d1487c338fe8> rdfs:label "Activity that is carried out regularly in a facility."@en,
+        "offers regular activity"@en,
+        "Actividad que se lleva a cabo regularmente en el equipamiento."@es,
+        "ofrece actividad regular"@es ;
+    sh:description "Activity that is carried out regularly in a facility."@en,
+        "Actividad que se lleva a cabo regularmente en el equipamiento."@es ;
+    sh:name "offers regular activity"@en,
+        "ofrece actividad regular"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#27a2f85391a953c339597033f8369bf0> rdfs:label "Public service provided by a facility, for example internet via wifi."@en,
+        "provides public service"@en,
+        "Servicio público prestado por un equipamiento, por ejemplo internet a través de una wifi."@es,
+        "presta servicio público"@es ;
+    sh:description "Public service provided by a facility, for example internet via wifi."@en,
+        "Servicio público prestado por un equipamiento, por ejemplo internet a través de una wifi."@es ;
+    sh:name "provides public service"@en,
+        "presta servicio público"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#2a5638bb60ea2b6cc9dad6b050cc0c9e> a sh:NodeShape ;
+    rdfs:label "Provincia" ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description """Entidad local con personalidad jurídica propia, determinada por la agrupación de Municipios y división territorial para el cumplimiento de las actividades del Estado. La delimitación territorial de Provincia está recogida en el Registro Central de Cartografía del IGN [fuente: Modelo de Direcciones de la Administración General del Estado v.2]
+Su identificador, que se especifica con la propiedad dct:identifier, es el proporcionado por el INE en http://www.ine.es/daco/daco42/codmun/codmun09/09codmun.xls
+Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"""@es ;
+    sh:name "Provincia" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Provincia .
+
+<https://astrea.linkeddata.es/shapes#2b0b3671d0180b7f8c732ad509f26f80> a sh:PropertyShape ;
+    rdfs:isDefinedBy sosa: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:wasObservedBy .
+
+<https://astrea.linkeddata.es/shapes#2e9b54f9ea252c6f0ef4a90faed34b85> a sh:NodeShape ;
+    rdfs:label "Ciudad" ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Una ciudad es un área urbana en la que predominan fundamentalmente la industria y los servicios [fuente: Wikipedia]"@es ;
+    sh:name "Ciudad" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Ciudad .
+
+<https://astrea.linkeddata.es/shapes#331dd89a581593e0eeda401dd3c4ea0a> a sh:NodeShape ;
+    rdfs:label "Traffic Measuring Device"@en,
+        "Dispositivo de medición de tráfico"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Traffic Measuring Device, type of Traffic Device which performs measurements."@en,
+        "Dispositivo de Medición de Tráfico, tipo de equipo de tráfico que realiza mediciones."@es ;
+    sh:name "Traffic Measuring Device"@en,
+        "Dispositivo de medición de tráfico"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#0e844086fdb25cbf9d4ac00c05ac0ae1>,
+        <https://astrea.linkeddata.es/shapes#3785ae40f091497ae1f8d118e56e95d4>,
+        <https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> ;
+    sh:targetClass edinttraf:TrafficMeasuringDevice .
+
+<https://astrea.linkeddata.es/shapes#3398ed0391751bb3a09e0aed51fffdb6> a sh:NodeShape ;
+    rdfs:label "Cadastral property"@en,
+        "Inmueble catastral"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/catastro> ;
+    sh:description "Real estate property registered in the Cadastre. Can be a premises, dwelling, or any independent use unit within a parcel. A cadastral property may have one or more constructions associated."@en,
+        "Bien inmueble inscrito en el Catastro. Puede ser un local, vivienda, o cualquier unidad de uso independiente dentro de una parcela. Un inmueble catastral puede tener una o más construcciones asociadas."@es ;
+    sh:name "Cadastral property"@en,
+        "Inmueble catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintcat:CadastralProperty .
+
+<https://astrea.linkeddata.es/shapes#33fcc55569a9807a79ec22ae9c9410e8> rdfs:label "Relate an Infraction to a concept from the taxonomy of infraction types."@en,
+        "has violation type"@en,
+        "Relaciona a una Infracción con un concepto de la taxonomía de tipos de infracción."@es,
+        "tiene tipo de infracción"@es ;
+    sh:description "Relate an Infraction to a concept from the taxonomy of infraction types."@en,
+        "Relaciona a una Infracción con un concepto de la taxonomía de tipos de infracción."@es ;
+    sh:name "has violation type"@en,
+        "tiene tipo de infracción"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#37965e0183e52604b4172e4f7ea4055a> a sh:NodeShape ;
+    rdfs:label "Facility"@en,
+        "Equipamiento"@es ;
+    sh:description "It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles."@en,
+        "Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos."@es ;
+    sh:name "Facility"@en,
+        "Equipamiento"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#168c1fd91d1e24052e1f18f712b4910b>,
+        <https://astrea.linkeddata.es/shapes#848f62ef3976824ec8b475fa92c77941>,
+        <https://astrea.linkeddata.es/shapes#c97f74c2f03698007cd10836c44bdda2>,
+        <https://astrea.linkeddata.es/shapes#edefab4c5a6c7f1298adbe7978c527d5>,
+        <https://astrea.linkeddata.es/shapes#f148dceb1c2ff8cf72640abbf24c0ba9> ;
+    sh:targetClass :Facility .
+
+<https://astrea.linkeddata.es/shapes#37bb8e7ed17a487dd205eec963bd0e1b> a sh:NodeShape ;
+    rdfs:label "Access observation"@en,
+        "Observación de acceso"@es ;
+    sh:description "Observation carried out at any entrance to a municipal facility. This includes pedestrian or vehicle access."@en,
+        "Observación que se realiza en cualquier acceso a un equipamiento municipal. Incluye acceso de personas o de vehículos."@es ;
+    sh:name "Access observation"@en,
+        "Observación de acceso"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#294666167c23dc3b30beb10dacc360fb>,
+        <https://astrea.linkeddata.es/shapes#75d84c602e7eca55bd2d5a7f285e239e> ;
+    sh:targetClass :AccessObservation .
+
+<https://astrea.linkeddata.es/shapes#3e18b0f9fac2d3bdcd51a2fdadcbda53> a sh:NodeShape ;
+    rdfs:label "Temporal entity"@en,
+        "entidad temporal"@es ;
+    sh:description "A temporal interval or instant."@en,
+        "Un intervalo temporal o un instante."@es ;
+    sh:name "Temporal entity"@en,
+        "entidad temporal"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98>,
+        <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> ;
+    sh:targetClass time:Instant,
+        time:Interval,
+        time:TemporalEntity .
+
+<https://astrea.linkeddata.es/shapes#415bd07e20b73c4b8fa334aac6b3f198> rdfs:label "Type of Incidence"@en,
+        "Type of incidence, planned or unplanned"@en,
+        "Tipo de Incidencia"@es,
+        "Tipo de incidencia, pueden ser planificadas o no planificadas."@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Type of incidence, planned or unplanned"@en,
+        "Tipo de incidencia, pueden ser planificadas o no planificadas."@es ;
+    sh:maxCount 1 ;
+    sh:name "Type of Incidence"@en,
+        "Tipo de Incidencia"@es .
+
+<https://astrea.linkeddata.es/shapes#48ea695aa98408a6ade8ae77c99c7bb4> rdfs:label "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."@en,
+        "has result"@en ;
+    rdfs:isDefinedBy <https://www.w3.org/TR/vocab-ssn/> ;
+    sh:description "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."@en ;
+    sh:name "has result"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#543ac8de374d7add480a5976bcc55230> a sh:NodeShape ;
+    rdfs:label "Regulated zone"@en,
+        "Zona regulatoria"@es ;
+    sh:description "Area to which a particular regulation or policy applies"@en,
+        "Area a la que se aplica una regulacion o normativa particular"@es ;
+    sh:name "Regulated zone"@en,
+        "Zona regulatoria"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintzone:RegulatedZone .
+
+<https://astrea.linkeddata.es/shapes#5f355806cecf37a7c9edca42f8eb300d> a sh:NodeShape ;
+    rdfs:label "Organization"@en,
+        "Organización"@es ;
+    sh:description "Any public or private organization that owns or manages an element of the infrastructure."@en,
+        "Cualquier organización pública o privada que sea titular o gestione un elemento de la infraestructura."@es ;
+    sh:name "Organization"@en,
+        "Organización"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :Organization .
+
+<https://astrea.linkeddata.es/shapes#5f4045e77929663a03e1192facf1905b> a sh:PropertyShape ;
+    rdfs:label "value" ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:name "value" ;
+    sh:nodeKind sh:Literal ;
+    sh:path qudt:value .
+
+<https://astrea.linkeddata.es/shapes#642cdeb6abe9fc7e1f7ae276e5cf5fa6> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://www.geonames.org/ontology#featureClass> .
+
+<https://astrea.linkeddata.es/shapes#684add183383f40ee3e60082fcfcfb39> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass qudt:Concept .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#6a6c1a2c510a59ec73b30d6da8edac7e> a sh:NodeShape ;
+    rdfs:label "Access sensor"@en,
+        "Sensor de acceso"@es ;
+    sh:description "A device that records the access of people or vehicles. This could be an LPR camera, a building entrance door sensor, or other similar devices."@en,
+        "Dispositivo que registra el acceso de personas o vehículos. Puede ser una cámara LPR, un sensor de puerta de entrada a un edificio, entre otros."@es ;
+    sh:name "Access sensor"@en,
+        "Sensor de acceso"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> ;
+    sh:targetClass :AccessSensor .
+
+<https://astrea.linkeddata.es/shapes#6ddc0b40525de8d44aa81deabedaa0bf> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://www.geonames.org/ontology#Feature> .
+
+<https://astrea.linkeddata.es/shapes#70f3c6343f52da6500f95ca0fca6f56e> a sh:NodeShape ;
+    rdfs:label "Autonomía"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Comunidad Autónoma o Ciudad Autónoma"@es ;
+    sh:name "Autonomía"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Autonomia .
+
+<https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395> a sh:NodeShape ;
+    rdfs:label "Organization"@en,
+        "Organización"@es ;
+    sh:description "An organization such as a school, NGO, corporation, club, etc."@en,
+        "Una organización como una escuela, una ONG, una corporación, un club, etc."@es ;
+    sh:name "Organization"@en,
+        "Organización"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#54337af83cb77ebcdf53a471e758202a> ;
+    sh:targetClass schema:Organization .
+
+<https://astrea.linkeddata.es/shapes#8355820918b8f052e2489eb782a08ab2> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path geo:sfContains .
+
+<https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425> a sh:NodeShape ;
+    rdfs:label "Feature"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+    sh:description "Esta clase representa el tipo \"feature\" de nivel superior. Es equivalente a GFI_Feature, definida en la norma ISO 19156:2011, y es la superclase de todos los tipos de \"feature\"."@es ;
+    sh:name "Feature"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> ;
+    sh:targetClass geo:Feature .
+
+<https://astrea.linkeddata.es/shapes#8ef1ba038357601c5128fb6fd422964c> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path qudt:unitFor .
+
+<https://astrea.linkeddata.es/shapes#9494a5e4502c50cda36778f3e1dd5577> a sh:NodeShape ;
+    rdfs:label "Vía"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+    sh:description """Vía de comunicación construida para la circulación. 
+En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. Asimismo, incluye la pseudovía., es decir todo aquello que complementa o sustituye a la vía.
+En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
+
+Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar un poco esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo."""@es ;
+    sh:name "Vía"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#87ad31925417d9adcbf2892b37bd5f6f>,
+        <https://astrea.linkeddata.es/shapes#96ce92d8193727802fa4a189ada10ca4> ;
+    sh:targetClass escjr:Via .
+
+<https://astrea.linkeddata.es/shapes#970a52d0d94cd47185d3d51986c6c106> rdfs:label "Relationship between an infrastructure element and the administrative division to which it belongs, including a neighborhood."@en,
+        "belongs to"@en,
+        "Relación entre un elemento de infraestructura y la división administrativa a la cual pertenece, incluido un Barrio."@es,
+        "pertenece a"@es ;
+    sh:description "Relationship between an infrastructure element and the administrative division to which it belongs, including a neighborhood."@en,
+        "Relación entre un elemento de infraestructura y la división administrativa a la cual pertenece, incluido un Barrio."@es ;
+    sh:name "belongs to"@en,
+        "pertenece a"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class esadm:Autonomia ;
+                sh:path :belongsTo ] [ sh:class esadm:Barrio ;
+                sh:path :belongsTo ] [ sh:class esadm:Ciudad ;
+                sh:path :belongsTo ] [ sh:class esadm:Distrito ;
+                sh:path :belongsTo ] [ sh:class esadm:Municipio ;
+                sh:path :belongsTo ] [ sh:class esadm:Provincia ;
+                sh:path :belongsTo ] ) .
+
+<https://astrea.linkeddata.es/shapes#993b6589c994d15205e34fdcbae76687> a sh:NodeShape ;
+    rdfs:label "Distrito"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
+    sh:name "Distrito"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Distrito .
+
+<https://astrea.linkeddata.es/shapes#999a4ae68ad549a15ec240a3935594c3> a sh:NodeShape ;
+    rdfs:label "Unplanned incidence"@en,
+        "Incidencia no planificada"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Unplanned traffic incidence"@en,
+        "Incidencia no planificada del tráfico de una ciudad"@es ;
+    sh:name "Unplanned incidence"@en,
+        "Incidencia no planificada"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edinttraf:UnplannedIncidence .
+
+<https://astrea.linkeddata.es/shapes#9e81a8547fd8cabc79752e243c8d2b67> a sh:NodeShape ;
+    rdfs:label "Geometry"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0>,
+        "Geometría"@es ;
+    sh:description "La clase representa el tipo de geometría de nivel superior. Esta clase es equivalente a la clase UML GM_Object definida en la norma ISO 19107 y es la superclase de todos los tipos de geometría."@es ;
+    sh:name "Geometry"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass geo:Geometry .
+
+<https://astrea.linkeddata.es/shapes#9e8fc937658bda7beceb6a3c16537508> a sh:PropertyShape ;
+    rdfs:label "An unambiguous reference to the resource within a given context."@en,
+        "identifier"@en,
+        "Una referencia no ambigua al recurso dentro de un contexto determinado."@es,
+        "identificador"@es ;
+    rdfs:isDefinedBy dcterms: ;
+    sh:datatype rdfs:Literal ;
+    sh:description "An unambiguous reference to the resource within a given context."@en,
+        "Una referencia no ambigua al recurso dentro de un contexto determinado."@es ;
+    sh:name "identifier"@en,
+        "identificador"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:identifier .
+
+<https://astrea.linkeddata.es/shapes#a131b8c602cfa0e1668be13f1132494b> a sh:NodeShape ;
+    rdfs:label "Traffic property"@en,
+        "Propiedad de tráfico"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Generalization of the observable properties of traffic measurement and the observable properties of control of specific vehicles."@en,
+        "Generalización de las propiedades observables de medición de tráfico y las propiedades observables de control de vehículos específicos."@es ;
+    sh:name "Traffic property"@en,
+        "Propiedad de tráfico"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edinttraf:TrafficProperty .
+
+<https://astrea.linkeddata.es/shapes#a631c84768ff3e5f04fb1d6567ba75be> a sh:PropertyShape ;
+    rdfs:label "Position of an instant, expressed using xsd:gYearMonth"@en,
+        "in XSD g-YearMonth"@en,
+        "Posición de un instante, expresado utilizando xsd:gYearMonth."@es,
+        "en año-mes gregoriano XSD"@es ;
+    rdfs:isDefinedBy time: ;
+    sh:datatype xsd:gYearMonth ;
+    sh:description "Position of an instant, expressed using xsd:gYearMonth"@en,
+        "Posición de un instante, expresado utilizando xsd:gYearMonth."@es ;
+    sh:name "in XSD g-YearMonth"@en,
+        "en año-mes gregoriano XSD"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path time:inXSDgYearMonth ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#ab003d5b5545fc1e3ac8bb504cdc62ad> a sh:NodeShape ;
+    rdfs:label "Management role"@en,
+        "Rol de gestión"@es ;
+    sh:description "The role that the municipal administration or one of its departments plays in the management of a municipal facility. This may include ownership, maintenance, security, among others."@en,
+        "Rol que realiza la administración municipal o alguna de sus dependencias en la gestión del equipamiento. Puede ser el rol de titularidad, mantenimiento, seguridad, entre otros."@es ;
+    sh:name "Management role"@en,
+        "Rol de gestión"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#713f24f53cba8bd16e58112f41bb4284>,
+        <https://astrea.linkeddata.es/shapes#dfc1a249d92ffcc29afe9a80bb567052> ;
+    sh:targetClass :ManagementRole .
+
+<https://astrea.linkeddata.es/shapes#ac612e147d405ab03c3d7ae59fabdc4d> rdfs:label "Type of Traffic Equipment"@en,
+        "Type of traffic equipment, monitor equipment or measuring devices"@en,
+        "Tipo de Equipo de Tráfico"@es,
+        "Tipo de equipo de tráfico, equipos de control y dispositivos de medición"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Type of traffic equipment, monitor equipment or measuring devices"@en,
+        "Tipo de equipo de tráfico, equipos de control y dispositivos de medición"@es ;
+    sh:maxCount 1 ;
+    sh:name "Type of Traffic Equipment"@en,
+        "Tipo de Equipo de Tráfico"@es .
+
+<https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:ConceptScheme .
+
+<https://astrea.linkeddata.es/shapes#b0e4858dd6a7fdf0deca7b1a3e325357> a sh:NodeShape ;
+    rdfs:label "Observable Property",
+        "Propiedad observable"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Una cualidad observable (propiedad, característica) de una entidad de interés."@es ;
+    sh:name "Observable Property",
+        "Propiedad observable"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass sosa:ObservableProperty .
+
+<https://astrea.linkeddata.es/shapes#b29c323cc06e9c6c8210c13b868f65d7> a sh:NodeShape ;
+    rdfs:label "Barrio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
+    sh:name "Barrio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Barrio .
+
+<https://astrea.linkeddata.es/shapes#b2bc06896c1c0fbf26f79b1b45f61a1c> a sh:NodeShape ;
+    rdfs:label "Shared vehicle station"@en,
+        "Estación de vehículos compartidos"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/vehiculos-compartidos> ;
+    sh:description "Place where you can both leave and pick up a shared vehicles. It is composed of docks."@en,
+        "Lugar donde se puede tanto dejar como recoger los vehículos compartidos. Está compuesto de anclajes."@es ;
+    sh:name "Shared vehicle station"@en,
+        "Estación de vehículos compartidos"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esvehcom:SharedVehicleStation .
+
+<https://astrea.linkeddata.es/shapes#c0c256e727b3763020e48bab08557125> a sh:NodeShape ;
+    rdfs:label "Incidence"@en,
+        "Incidencia"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Incidence in the traffic system of a city"@en,
+        "Incidencia que ocurre en el sistema de tráfico de una ciudad"@es ;
+    sh:name "Incidence"@en,
+        "Incidencia"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:not <https://astrea.linkeddata.es/shapes#551747742347c65a3a417153b3f20a07>,
+        <https://astrea.linkeddata.es/shapes#955adc73edeafcb26458f931709cb993> ;
+    sh:property <https://astrea.linkeddata.es/shapes#1c06f64788ceed887349df530cb225ed>,
+        <https://astrea.linkeddata.es/shapes#2198789dee206bc8c362408b14a3f558>,
+        <https://astrea.linkeddata.es/shapes#88d50e1fd6d06812076022366fd5092e>,
+        <https://astrea.linkeddata.es/shapes#91a4b7ea530843a4e68976e03536b0cb>,
+        <https://astrea.linkeddata.es/shapes#d935c1c52c1b4e6a4eb06ad308910bb1> ;
+    sh:targetClass edinttraf:Incidence .
+
+<https://astrea.linkeddata.es/shapes#c31152868dfd36bf465d410b6884b764> a sh:NodeShape ;
+    rdfs:label "Infrastructure element"@en,
+        "Elemento de la infraestructura"@es ;
+    sh:description "Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc."@en,
+        "Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc."@es ;
+    sh:name "Infrastructure element"@en,
+        "Elemento de la infraestructura"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#496cd065816ca249fb70fde50d7f34a2>,
+        <https://astrea.linkeddata.es/shapes#79c60e6ec8508361a515263dbabe727e> ;
+    sh:targetClass :InfrastructureElement .
+
+<https://astrea.linkeddata.es/shapes#c6267c132b4a367ac0dcd41b18272b04> a sh:PropertyShape ;
+    rdfs:label "Portal que un fenómeno geográfico contiene (por ejemplo, una vía o un tramo de vía, aunque también puede ser un barrio, distrito, ciudad, etc.)"@es,
+        "contiene portal"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+    sh:class escjr:Portal ;
+    sh:description "Portal que un fenómeno geográfico contiene (por ejemplo, una vía o un tramo de vía, aunque también puede ser un barrio, distrito, ciudad, etc.)"@es ;
+    sh:name "contiene portal"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path escjr:contienePortal .
+
+<https://astrea.linkeddata.es/shapes#c8ea5a736f9d149390fbb1691064012a> rdfs:label "Relationship between an infrastructure element and a concept from the taxonomy of infrastructure element types."@en,
+        "has infrastructure element type"@en,
+        "Relación entre un elemento de infraestructura y un concepto de la taxonomía de tipos de elemento de infraestructura."@es,
+        "tiene tipo de elemento de infraestructura"@es ;
+    sh:description "Relationship between an infrastructure element and a concept from the taxonomy of infrastructure element types."@en,
+        "Relación entre un elemento de infraestructura y un concepto de la taxonomía de tipos de elemento de infraestructura."@es ;
+    sh:name "has infrastructure element type"@en,
+        "tiene tipo de elemento de infraestructura"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#cffb6a5a3d7c32fbfd7bc543565c5167> rdfs:label "Relationship between the management role and the taxonomy of management roles."@en,
+        "has role type"@en,
+        "Relación entre el Rol de gestión y la taxonomía de roles de gestión."@es,
+        "tiene tipo de rol"@es ;
+    sh:description "Relationship between the management role and the taxonomy of management roles."@en,
+        "Relación entre el Rol de gestión y la taxonomía de roles de gestión."@es ;
+    sh:name "has role type"@en,
+        "tiene tipo de rol"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#d4c2306b1c47426d30900eff0ad03abc> a sh:PropertyShape ;
+    rdfs:label "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es,
+        "pertenece a municipio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:class esadm:Municipio ;
+    sh:description "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+    sh:name "pertenece a municipio"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path esadm:municipio .
+
+<https://astrea.linkeddata.es/shapes#d962715fbf72868c0c9961959a58b34e> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path time:hasTime .
+
+<https://astrea.linkeddata.es/shapes#de2a4162216ec8fff7deba5ceb987f5c> a sh:NodeShape ;
+    rdfs:label "Traffic observation"@en,
+        "Observación del tráfico"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Observation by a traffic measuring device or a control equipment such as speed cameras or Automatic Number Plate Recognition (ANPR) systems."@en,
+        "Observación mediante un dispositivo de medición de tráfico o un equipo de control, como radares de velocidad o sistemas de reconocimiento automático de matrículas (ANPR)."@es ;
+    sh:name "Traffic observation"@en,
+        "Observación del tráfico"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#4dd0d7ae500d06e3cd2f32afa5e1cc97> ;
+    sh:targetClass edinttraf:TrafficObservation .
+
+<https://astrea.linkeddata.es/shapes#e30e67ada342f91e399e580a75f7d3c8> a sh:NodeShape ;
+    rdfs:label "Parking"@en,
+        "Aparcamiento"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/aparcamiento> ;
+    sh:description "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."@en,
+        "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."@es ;
+    sh:name "Parking"@en,
+        "Aparcamiento"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://edint.es/def/aparcamiento#Parking> .
+
+<https://astrea.linkeddata.es/shapes#e61935f1cc0fbdc80be67c061e1cbf71> a sh:NodeShape ;
+    rdfs:label "Observation",
+        "Observación"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Acto de realizar un procedimiento (de observación) para estimar o calcular el valor de una propiedad de una característica de interés. Se vincula a un sensor para describir qué realizó la observación y cómo; se vincula a una propiedad observable para describir de qué propiedad es la estimación del resultado, y a una característica de interés para detallar con qué se asoció esa propiedad."@es ;
+    sh:name "Observation",
+        "Observación"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#570e251d885fe83c81ffb787ce4307aa>,
+        <https://astrea.linkeddata.es/shapes#82ac0ee2607c4d742aa0dafe16a38558>,
+        <https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295>,
+        <https://astrea.linkeddata.es/shapes#c8ba0e30ea76a68976d6ab2f0d9ce576>,
+        <https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220> ;
+    sh:targetClass sosa:Observation .
+
+<https://astrea.linkeddata.es/shapes#e85f7f569c1b43b31809a79038a33ed0> a sh:NodeShape ;
+    rdfs:label "Feature Of Interest"@en,
+        "Entidad de interés"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Cosa cuya propiedad se está estimando o calculando en el curso de una Observación para llegar a un Resultado o cuya propiedad está siendo manipulada por un Actuador, o que está siendo muestreada o transformada en un acto de Muestreo."@es ;
+    sh:name "Feature Of Interest"@en,
+        "Entidad de interés"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass sosa:FeatureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#eb84c50e4c74697fb0c1c93ba0fa974c> a sh:NodeShape ;
+    rdfs:label "Dirección postal"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal> ;
+    sh:description """Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address
+Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero"""@es ;
+    sh:name "Dirección postal"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esdir:DireccionPostal .
+
+<https://astrea.linkeddata.es/shapes#eef4e9102f8c4e433815a9af41e4f720> a sh:NodeShape ;
+    rdfs:label "Sensor"@en,
+        "Sensor"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:description "Sistema que implementa un procedimiento de observación para determinar el valor de una Propiedad observable.Puede ser un dispositivo, una infraestructura, un agente (incluyendo humanos) o software (simulación). Un sensor responde a un estímulo, por ejemplo, un cambio en el entorno o datos de entrada compuestos por los resultados de observaciones previas."@es ;
+    sh:name "Sensor"@en,
+        "Sensor"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#c78adf719f2fc347d9729f079d86324b> ;
+    sh:targetClass sosa:Sensor .
+
+<https://astrea.linkeddata.es/shapes#f0f88a230b15ab1b3a6683269da93a09> a sh:NodeShape ;
+    rdfs:label "Street section"@en,
+        "Tramo"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Section/s defined by a starting and an ending point that can belong to one or more street."@en,
+        "Tramo definido por un punto de inicio y fin que puede pertenecer a una o más vías"@es ;
+    sh:name "Street section"@en,
+        "Tramo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:not <https://astrea.linkeddata.es/shapes#551747742347c65a3a417153b3f20a07> ;
+    sh:property <https://astrea.linkeddata.es/shapes#3f423556f5fa0cd190a4d8583ffe51f1>,
+        <https://astrea.linkeddata.es/shapes#f5a33cb6c2dd457969967849267ed5e2> ;
+    sh:targetClass edinttraf:StreetSection .
+
+<https://astrea.linkeddata.es/shapes#f19d0a17684b91303d6dc328e9cf2fb7> a sh:PropertyShape ;
+    rdfs:label "has unit",
+        "hasUnit" ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:name "has unit",
+        "hasUnit" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path qudt:hasUnit .
+
+<https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c> a sh:NodeShape ;
+    rdfs:label "Time interval"@en,
+        "intervalo de tiempo"@es ;
+    sh:description "A temporal entity with an extent or duration"@en,
+        "Una entidad temporal con una extensión o duración."@es ;
+    sh:name "Time interval"@en,
+        "intervalo de tiempo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass time:Interval .
+
+<https://astrea.linkeddata.es/shapes#f279402ab37f85caca4ee96619ecf9bb> a sh:NodeShape ;
+    rdfs:label "Counting sensor"@en,
+        "Sensor de conteo"@es ;
+    sh:description "A device that records the number of people or vehicles that is observes."@en,
+        "Dispositivo que registra el número de personas o vehículos que observa."@es ;
+    sh:name "Counting sensor"@en,
+        "Sensor de conteo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> ;
+    sh:targetClass :CountingSensor .
+
+<https://astrea.linkeddata.es/shapes#fa78cfbce37dbcb34ab378481e7243c2> a sh:NodeShape ;
+    rdfs:label "Quantity value" ;
+    rdfs:isDefinedBy <http://qudt.org/schema/qudt> ;
+    sh:description "A <i>Quantity Value</i> expresses the magnitude and kind of a quantity and is given by the product of a numerical value <code>n</code> and a unit of measure <code>U</code>. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to <a href=\"http://physics.nist.gov/Pubs/SP811/sec07.html\">NIST SP 811 section 7</a> for more on quantity values."^^rdf:HTML ;
+    sh:name "Quantity value" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#b6f09ea14b356f677ecafa6b46a9b43c> ;
+    sh:targetClass qudt:QuantityValue .
+
+<https://astrea.linkeddata.es/shapes#fb82367f06bc0cbf344782188aae254b> a sh:NodeShape ;
+    rdfs:label "Planned incidence"@en,
+        "Incidencia planificada"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "Planned traffic incidence"@en,
+        "Incidencia planificada, puede ser recurrente o no"@es ;
+    sh:name "Planned incidence"@en,
+        "Incidencia planificada"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#bc319de1f2e369bf3299bf2d999e8f12>,
+        <https://astrea.linkeddata.es/shapes#c5d521f278f928c3b426634a9bca91bf>,
+        <https://astrea.linkeddata.es/shapes#d7d4289d2468461fa170eb3466c479d5> ;
+    sh:targetClass edinttraf:PlannedIncidence .
+
+<https://astrea.linkeddata.es/shapes#fb9875e11739e5b48ce7f56b25dacedd> a sh:NodeShape ;
+    rdfs:label "Traffic equipment"@en,
+        "Equipo de tráfico"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:description "A traffic equipment monitors the traffic of a city"@en,
+        "Un Equipo de Tráfico es uno de los equipos que se encargan de controlar o monitorizar el tráfico de la ciudad."@es ;
+    sh:name "Traffic equipment"@en,
+        "Equipo de tráfico"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#724b6e51b8af54a19d919f40c6eaa5f3>,
+        <https://astrea.linkeddata.es/shapes#88d50e1fd6d06812076022366fd5092e>,
+        <https://astrea.linkeddata.es/shapes#de7f46aa7197553c2a5de8952fdfe0b8> ;
+    sh:targetClass edinttraf:TrafficEquipment .
+
+<https://astrea.linkeddata.es/shapes#fbbdec372458b6ca648be3b4d8fb667e> a sh:NodeShape ;
+    rdfs:label "Municipio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description """Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del Registro Central de Cartografía del IGN.
+Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"""@es ;
+    sh:name "Municipio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass esadm:Municipio .
+
+<https://astrea.linkeddata.es/shapes#fbd4ab2d5fae631f5508a529d1eec812> a sh:PropertyShape ;
+    rdfs:label "The simple value of an Observation or Actuation or act of Sampling."@en,
+        "has simple result"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:description "The simple value of an Observation or Actuation or act of Sampling."@en ;
+    sh:name "has simple result"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path sosa:hasSimpleResult .
+
+<https://astrea.linkeddata.es/shapes#fcaeab6b3a84adf7ef5a79afebabed09> a sh:PropertyShape ;
+    rdfs:label "Vía que un fenómeno geográfico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)"@es,
+        "contiene vía"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+    sh:class escjr:Via ;
+    sh:description "Vía que un fenómeno geográfico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)"@es ;
+    sh:name "contiene vía"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path escjr:contieneVia .
+
+<https://astrea.linkeddata.es/shapes#fccf0bde644b5bb2e7db2db0caafda19> a sh:NodeShape ;
+    rdfs:label "Violation"@en,
+        "Infracción"@es ;
+    sh:description "Non-compliance or violation of traffic or access rules, road laws or local ordinances by a person or a driver or owner of a vehicle."@en,
+        "Incumplimiento o violación de las normas de tránsito o acceso, leyes de circulación u ordenanzas locales por parte de una persona o de un conductor o propietario de un vehículo."@es ;
+    sh:name "Violation"@en,
+        "Infracción"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2a730e2d33ce1364be8b9148607664e9>,
+        <https://astrea.linkeddata.es/shapes#7b75f7c2887fab44d229be6feae8824e> ;
+    sh:targetClass :Violation .
+
+<https://astrea.linkeddata.es/shapes#fce07d53d29f6d15023cbd797043a83f> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://www.geonames.org/ontology#featureCode> .
+
+<https://astrea.linkeddata.es/shapes#fd18469ce1a325de553dc7625cbe2b2d> a sh:NodeShape ;
+    rdfs:label "Counting observation"@en,
+        "Observación de conteo"@es ;
+    sh:description "Observation on the number of people or vehicles that a sensor counts."@en,
+        "Observación sobre el número de personas o vehículos que cuenta un sensor."@es ;
+    sh:name "Counting observation"@en,
+        "Observación de conteo"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :CountingObservation .
+
+<https://astrea.linkeddata.es/shapes#fe83e5933031e0c73639829999e1fc92> a sh:NodeShape ;
+    rdfs:label "Observation point"@en,
+        "Punto de observación"@es ;
+    sh:description "Points where access or counting observations can be made using sensors."@en,
+        "Puntos en donde se pueden realizar observaciones de acceso o de conteo a través de sensores."@es ;
+    sh:name "Observation point"@en,
+        "Punto de observación"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :ObservationPoint .
+
+<https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c> a sh:PropertyShape ;
+    rdfs:label "address"@en,
+        "dirección"@en,
+        "Dirección física de la entidad,"@es ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    sh:class esdir:DireccionPostal ;
+    sh:description "Dirección física de la entidad,"@es ;
+    sh:name "address"@en,
+        "dirección"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema1:address .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
+<https://astrea.linkeddata.es/shapes#0e844086fdb25cbf9d4ac00c05ac0ae1> a sh:PropertyShape ;
+    rdfs:label "Running device"@en,
+        "This property allows describing whether the device is working or not."@en,
+        "En Servicio"@es,
+        "Esta propiedad permite conocer si el dispositivo funciona o no."@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:datatype xsd:boolean ;
+    sh:description "This property allows describing whether the device is working or not."@en,
+        "Esta propiedad permite conocer si el dispositivo funciona o no."@es ;
+    sh:name "Running device"@en,
+        "En Servicio"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:inService ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#168c1fd91d1e24052e1f18f712b4910b> a sh:PropertyShape ;
+    rdfs:label "Accessibility of a facility. For example, access and movement in interior and common areas of sports, cultural, social centers and other buildings."@en,
+        "accessibility"@en,
+        "Accesibilidad de un equipamiento. Por ejemplo, acceso y desplazamiento en zonas interiores y comunes de centros deportivos, culturales, sociales y otros edificios."@es,
+        "accesibilidad"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Accessibility of a facility. For example, access and movement in interior and common areas of sports, cultural, social centers and other buildings."@en,
+        "Accesibilidad de un equipamiento. Por ejemplo, acceso y desplazamiento en zonas interiores y comunes de centros deportivos, culturales, sociales y otros edificios."@es ;
+    sh:name "accessibility"@en,
+        "accesibilidad"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :accessibility ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#1808ac89bb0f54fc4822ed6c5618e78a> a sh:PropertyShape ;
+    rdfs:label "Date when an entity was last maintained, especially an urban element."@en,
+        "maintenance date"@en,
+        "Fecha en la que se hizo mantenimiento de una entidad por última vez, especialmente un elemento urbano."@es,
+        "fecha de mantenimiento"@es ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Date when an entity was last maintained, especially an urban element."@en,
+        "Fecha en la que se hizo mantenimiento de una entidad por última vez, especialmente un elemento urbano."@es ;
+    sh:name "maintenance date"@en,
+        "fecha de mantenimiento"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :maintenanceDate ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#1c06f64788ceed887349df530cb225ed> a sh:PropertyShape ;
+    rdfs:label "The start date and time of the item (in ISO 8601 date format)."@en,
+        "start date"@en,
+        "La fecha y hora de inicio del elemento (en formato de fecha ISO 8601)."@es,
+        "fecha de inicio"@es ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The start date and time of the item (in ISO 8601 date format)."@en,
+        "La fecha y hora de inicio del elemento (en formato de fecha ISO 8601)."@es ;
+    sh:name "start date"@en,
+        "fecha de inicio"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema1:startDate ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#2198789dee206bc8c362408b14a3f558> a sh:PropertyShape ;
+    rdfs:label "The end date and time of the item (in ISO 8601 date format)."@en,
+        "end date"@en,
+        "La fecha y hora de finalización del elemento (en formato de fecha ISO 8601)."@es,
+        "fecha de finalización"@es ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The end date and time of the item (in ISO 8601 date format)."@en,
+        "end date"@en,
+        "La fecha y hora de finalización del elemento (en formato de fecha ISO 8601)."@es ;
+    sh:name "fecha de finalización"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema1:endDate ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98> a sh:PropertyShape ;
+    rdfs:label "Beginning of a temporal entity"@en,
+        "has beginning"@en,
+        "Comienzo de una entidad temporal."@es,
+        "tiene principio"@es ;
+    sh:class time:Instant ;
+    sh:description "Beginning of a temporal entity"@en,
+        "Comienzo de una entidad temporal."@es ;
+    sh:name "has beginning"@en,
+        "tiene principio"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path time:hasBeginning .
+
+<https://astrea.linkeddata.es/shapes#294666167c23dc3b30beb10dacc360fb> a sh:PropertyShape ;
+    rdfs:label "Relationship between an observation and the infraction it is proving."@en,
+        "proofs violation"@en,
+        "Relación entre la observación urbana y la infracción que está soportando."@es,
+        "demuestra infracción"@es ;
+    sh:class :Violation ;
+    sh:description "Relationship between an observation and the infraction it is proving."@en,
+        "Relación entre la observación urbana y la infracción que está soportando."@es ;
+    sh:name "proofs violation"@en,
+        "demuestra infracción"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :provesViolation .
+
+<https://astrea.linkeddata.es/shapes#2a730e2d33ce1364be8b9148607664e9> a sh:PropertyShape ;
+    rdfs:label "Relationship between an infraction and the vehicle that committed the infraction."@en,
+        "linked to"@en,
+        "Relación entre una infracción y el vehículo que cometió la infracción."@es,
+        "asociado a"@es ;
+    sh:class edintveh:Vehicle ;
+    sh:description "Relationship between an infraction and the vehicle that committed the infraction."@en,
+        "Relación entre una infracción y el vehículo que cometió la infracción."@es ;
+    sh:name "linked to"@en,
+        "asociado a"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :linkedTo .
+
+<https://astrea.linkeddata.es/shapes#2c05aff6cdb8e4832c0587b142f0256d> a sh:PropertyShape ;
+    rdfs:label "xETRS89",
+        "X-Coordinate in meters (ETRS89)"@en,
+        "Coordenada X en metros (ETRS89)"@es ;
+    rdfs:isDefinedBy <https://datos.ign.es/def/geo_core#> ;
+    sh:datatype xsd:float ;
+    sh:description "X-Coordinate in meters (ETRS89)"@en,
+        "Coordenada X en metros (ETRS89)"@es ;
+    sh:name "xETRS89" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://datos.ign.es/def/geo_core#xETRS89> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> a sh:PropertyShape ;
+    rdfs:label "has geometry"@en,
+        "Una representación espacial de un \"feature\" determinado."@es,
+        "tiene geometría"@es ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+    sh:class geo:Geometry ;
+    sh:description "Una representación espacial de un \"feature\" determinado."@es ;
+    sh:name "has geometry"@en,
+        "tiene geometría"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path geo:hasGeometry .
+
+<https://astrea.linkeddata.es/shapes#3785ae40f091497ae1f8d118e56e95d4> a sh:PropertyShape ;
+    rdfs:label "Measurement Frequency"@en,
+        "This property allows to know the measurement frequency of the device."@en,
+        "Esta propiedad permite conocer la frecuencia de medición del dispositivo."@es,
+        "Frecuencia Medición"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:datatype xsd:string ;
+    sh:description "This property allows to know the measurement frequency of the device."@en,
+        "Esta propiedad permite conocer la frecuencia de medición del dispositivo."@es ;
+    sh:name "Measurement Frequency"@en,
+        "Frecuencia Medición"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:measurementFrequency ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#3f423556f5fa0cd190a4d8583ffe51f1> a sh:PropertyShape ;
+    rdfs:label "Relationship of the section with the point where it ends."@en,
+        "end of section"@en,
+        "Relación del tramo con el lugar donde finaliza el tramo."@es,
+        "fin del tramo"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:class <http://www.opengis.net/ont/sf#Point> ;
+    sh:description "Relationship of the section with the point where it ends."@en,
+        "Relación del tramo con el lugar donde finaliza el tramo."@es ;
+    sh:maxCount 1 ;
+    sh:name "end of section"@en,
+        "fin del tramo"@es ;
+    sh:path edinttraf:endOfSection .
+
+<https://astrea.linkeddata.es/shapes#496cd065816ca249fb70fde50d7f34a2> a sh:PropertyShape ;
+    rdfs:label "Relationship between an infrastructure element and an observation point."@en,
+        "has observation point"@en,
+        "Relación entre un elemento de la infraestructura y un punto de observación."@es,
+        "tiene punto de observación"@es ;
+    sh:class :ObservationPoint ;
+    sh:description "Relationship between an infrastructure element and an observation point."@en,
+        "Relación entre un elemento de la infraestructura y un punto de observación."@es ;
+    sh:name "has observation point"@en,
+        "tiene punto de observación"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasObservationPoint .
+
+<https://astrea.linkeddata.es/shapes#4dd0d7ae500d06e3cd2f32afa5e1cc97> a sh:PropertyShape ;
+    rdfs:label "This property states whether the observation is validated or not."@en,
+        "Validated Observation"@en,
+        "Esta propiedad permite conocer si se ha producido una validación de la observación o no"@es,
+        "Validada"@es ;
+    rdfs:isDefinedBy edinttraf: ;
+    sh:datatype xsd:boolean ;
+    sh:description "This property states whether the observation is validated or not."@en,
+        "Esta propiedad permite conocer si se ha producido una validación de la observación o no"@es ;
+    sh:name "Validated Observation"@en,
+        "Validada"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:validated ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#54337af83cb77ebcdf53a471e758202a> a sh:PropertyShape ;
+    rdfs:label "Property that points out whether an entity, especially an organization, is public or not."@en,
+        "is public"@en,
+        "Propiedad que indica si una entidad, especialmente una Organización, es pública"@es,
+        "es público"@es ;
+    sh:datatype xsd:boolean ;
+    sh:description "Property that points out whether an entity, especially an organization, is public or not."@en,
+        "Propiedad que indica si una entidad, especialmente una Organización, es pública"@es ;
+    sh:name "is public"@en,
+        "es público"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :isPublic ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#570e251d885fe83c81ffb787ce4307aa> a sh:PropertyShape ;
+    rdfs:label "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."@en,
+        "phenomenon time"@en,
+        "El momento en que el resultado de una observación, actuación o muestreo se aplica a la entidad de interés. No necesariamente coincide con el momento del resultado. Puede ser un intervalo, un instante o alguna otra entidad temporal compuesta."@es,
+        "momento del fenómeno"@es ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:class time:TemporalEntity ;
+    sh:description "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."@en,
+        "El momento en que el resultado de una observación, actuación o muestreo se aplica a la entidad de interés. No necesariamente coincide con el momento del resultado. Puede ser un intervalo, un instante o alguna otra entidad temporal compuesta."@es ;
+    sh:name "phenomenon time"@en,
+        "momento del fenómeno"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:phenomenonTime .
+
+<https://astrea.linkeddata.es/shapes#5cec87967ef57911da28d5bdb8d563c0> a sh:PropertyShape ;
+    rdfs:label "Date when an entity, especially a device, was installed."@en,
+        "installation date"@en,
+        "Fecha en la que se instaló una entidad, especialmente un dispositivo"@es,
+        "fecha de instalación"@es ;
+    sh:datatype xsd:dateTime ;
+    sh:description "Date when an entity, especially a device, was installed."@en,
+        "Fecha en la que se instaló una entidad, especialmente un dispositivo"@es ;
+    sh:name "installation date"@en,
+        "fecha de instalación"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :installationDate ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#713f24f53cba8bd16e58112f41bb4284> a sh:PropertyShape ;
+    rdfs:label "Relationship between the management role over a municipal facility and the organization that exercises it."@en,
+        "role played by"@en,
+        "Relación entre el rol de gestión sobre un equipamiento municipal y la organización que lo ejerce."@es,
+        "rol ejercido por"@es ;
+    sh:class :Organization ;
+    sh:description "Relationship between the management role over a municipal facility and the organization that exercises it."@en,
+        "Relación entre el rol de gestión sobre un equipamiento municipal y la organización que lo ejerce."@es ;
+    sh:name "role played by"@en,
+        "rol ejercido por"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :rolePlayedBy .
+
+<https://astrea.linkeddata.es/shapes#724b6e51b8af54a19d919f40c6eaa5f3> a sh:PropertyShape ;
+    rdfs:label "This property allows knowing whether the device is urban or not"@en,
+        "Urban"@en,
+        "Esta propiedad permite describir si el dispositivo es urbano o no."@es,
+        "Urbano"@es ;
+    rdfs:isDefinedBy edinttraf: ;
+    sh:datatype xsd:boolean ;
+    sh:description "This property allows knowing whether the device is urban or not"@en,
+        "Esta propiedad permite describir si el dispositivo es urbano o no."@es ;
+    sh:name "Urban"@en,
+        "Urbano"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:urban ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#75d84c602e7eca55bd2d5a7f285e239e> a sh:PropertyShape ;
+    rdfs:label "Property that connects an observation to the observed vehicle."@en,
+        "includes vehicle"@en,
+        "Propiedad que relaciona una observación con el vehículo observado"@es,
+        "incluye vehículo"@es ;
+    sh:class edintveh:Vehicle ;
+    sh:description "Property that connects an observation to the observed vehicle."@en,
+        "Propiedad que relaciona una observación con el vehículo observado"@es ;
+    sh:name "includes vehicle"@en,
+        "incluye vehículo"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :includesVehicle .
+
+<https://astrea.linkeddata.es/shapes#79c60e6ec8508361a515263dbabe727e> a sh:PropertyShape ;
+    rdfs:label "Relación entre un elemento de infraestructura y su titular, generalmente una organización"@en,
+        "Relationship between an infrastructure element and its owner, which is usually an organization."@en,
+        "has registered owner"@en,
+        "tiene titular registrado"@es ;
+    sh:class :Organization ;
+    sh:description "Relación entre un elemento de infraestructura y su titular, generalmente una organización"@en,
+        "Relationship between an infrastructure element and its owner, which is usually an organization."@en ;
+    sh:name "has registered owner"@en,
+        "tiene titular registrado"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasRegisteredOwner .
+
+<https://astrea.linkeddata.es/shapes#7b75f7c2887fab44d229be6feae8824e> a sh:PropertyShape ;
+    rdfs:label "cancelled complaint"@en,
+        "Propiedad que indica si la denuncia (de una infracción) ha sido anulada o no"@es,
+        "denuncia anulada"@es ;
+    sh:datatype xsd:boolean ;
+    sh:description "Propiedad que indica si la denuncia (de una infracción) ha sido anulada o no"@es ;
+    sh:name "cancelled complaint"@en,
+        "denuncia anulada"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :complaintCancelled ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#82ac0ee2607c4d742aa0dafe16a38558> a sh:PropertyShape ;
+    rdfs:label "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en,
+        "result time"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/common/> ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en ;
+    sh:name "result time"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path sosa:resultTime ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#848f62ef3976824ec8b475fa92c77941> a sh:PropertyShape ;
+    rdfs:label "Relationship between a municipal facility and the area where it is located."@en,
+        "located in zone"@en,
+        "Relación entre un equipamiento y la zona donde está ubicada."@es,
+        "ubicado en zona"@es ;
+    sh:class edintzone:RegulatedZone ;
+    sh:description "Relationship between a municipal facility and the area where it is located."@en,
+        "Relación entre un equipamiento y la zona donde está ubicada."@es ;
+    sh:name "located in zone"@en,
+        "ubicado en zona"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path esvehcom:locatedInZone .
+
+<https://astrea.linkeddata.es/shapes#87ad31925417d9adcbf2892b37bd5f6f> a sh:PropertyShape ;
+    sh:hasValue <http://www.geonames.org/ontology#R.ST> ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://www.geonames.org/ontology#featureCode> .
+
+<https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> a sh:PropertyShape ;
+    rdfs:label "End of a temporal entity."@en,
+        "has end"@en,
+        "Final de una entidad temporal."@es,
+        "tiene fin"@es ;
+    sh:class time:Instant ;
+    sh:description "End of a temporal entity."@en,
+        "Final de una entidad temporal."@es ;
+    sh:name "has end"@en,
+        "tiene fin"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path time:hasEnd .
+
+<https://astrea.linkeddata.es/shapes#91a4b7ea530843a4e68976e03536b0cb> a sh:PropertyShape ;
+    rdfs:label "Relationship of the Incidence with the Section, where it happens."@en,
+        "incidence in section"@en,
+        "Relación de la Incidencia con el Tramo donde se produce la misma."@es,
+        "incidencia en tramo"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:class edinttraf:StreetSection ;
+    sh:description "Relationship of the Incidence with the Section, where it happens."@en,
+        "Relación de la Incidencia con el Tramo donde se produce la misma."@es ;
+    sh:maxCount 1 ;
+    sh:name "incidence in section"@en,
+        "incidencia en tramo"@es ;
+    sh:path edinttraf:incidenceInSection .
+
+<https://astrea.linkeddata.es/shapes#955adc73edeafcb26458f931709cb993> sh:class edinttraf:StreetSection .
+
+<https://astrea.linkeddata.es/shapes#96ce92d8193727802fa4a189ada10ca4> a sh:PropertyShape ;
+    sh:hasValue <http://www.geonames.org/ontology#R> ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path <http://www.geonames.org/ontology#featureClass> .
+
+<https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295> a sh:PropertyShape ;
+    rdfs:label "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en,
+        "observed property"@en ;
+    rdfs:isDefinedBy sosa:,
+        <http://www.w3.org/ns/sosa/obs/> ;
+    sh:class sosa:ObservableProperty ;
+    sh:description "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en ;
+    sh:name "observed property"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:observedProperty .
+
+<https://astrea.linkeddata.es/shapes#b6f09ea14b356f677ecafa6b46a9b43c> a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path qudt:hasUnit .
+
+<https://astrea.linkeddata.es/shapes#bc319de1f2e369bf3299bf2d999e8f12> a sh:PropertyShape ;
+    rdfs:label "Recurrent incidence"@en,
+        "This property allows describing whether there is a recurrence in the incidence or not"@en,
+        "Esta propiedad permite describir si la incidencia es recurrente o no."@es,
+        "Incidencia recurrente"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:datatype xsd:boolean ;
+    sh:description "This property allows describing whether there is a recurrence in the incidence or not"@en,
+        "Esta propiedad permite describir si la incidencia es recurrente o no."@es ;
+    sh:name "Recurrent incidence"@en,
+        "Incidencia recurrente"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:isRecurrent ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#c178cd0fa2ad8fe024ff43f0d6ccb895> sh:class escjr:Via .
+
+<https://astrea.linkeddata.es/shapes#c5d521f278f928c3b426634a9bca91bf> a sh:PropertyShape ;
+    rdfs:label "Recurrence"@en,
+        "This property allows describing the recurrence"@en,
+        "Esta propiedad permite describir la recurrencia."@es,
+        "Recurrencia"@es ;
+    rdfs:isDefinedBy edinttraf: ;
+    sh:datatype xsd:string ;
+    sh:description "This property allows describing the recurrence"@en,
+        "Esta propiedad permite describir la recurrencia."@es ;
+    sh:name "Recurrence"@en,
+        "Recurrencia"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:recurrence ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#c78adf719f2fc347d9729f079d86324b> a sh:PropertyShape ;
+    rdfs:label "observes"@en,
+        "Relación entre un sensor y una propiedad observable que es capaz de detectar."@es,
+        "observa"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:class sosa:ObservableProperty ;
+    sh:description "Relación entre un sensor y una propiedad observable que es capaz de detectar."@es ;
+    sh:name "observes"@en,
+        "observa"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:observes .
+
+<https://astrea.linkeddata.es/shapes#c8ba0e30ea76a68976d6ab2f0d9ce576> a sh:PropertyShape ;
+    rdfs:label "has feature of interest",
+        "Una relación entre una Observación y la entidad cuya calidad fue observada, o entre una Actuación y la entidad cuya propiedad fue modificada, o entre un acto de muestreo y la entidad que fue muestreada."@es,
+        "tiene entidad de interés"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:class sosa:FeatureOfInterest ;
+    sh:description "Una relación entre una Observación y la entidad cuya calidad fue observada, o entre una Actuación y la entidad cuya propiedad fue modificada, o entre un acto de muestreo y la entidad que fue muestreada."@es ;
+    sh:name "has feature of interest",
+        "tiene entidad de interés"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:hasFeatureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#c97f74c2f03698007cd10836c44bdda2> a sh:PropertyShape ;
+    rdfs:label "Relationship between a Facility and the corresponding property in the city registry."@en,
+        "is cadastral property"@en,
+        "Relación entre un equipamiento y el correspondiente inmueble en el catastro."@es,
+        "es inmueble catastral"@es ;
+    sh:class edintcat:CadastralProperty ;
+    sh:description "Relationship between a Facility and the corresponding property in the city registry."@en,
+        "Relación entre un equipamiento y el correspondiente inmueble en el catastro."@es ;
+    sh:name "is cadastral property"@en,
+        "es inmueble catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :isCadastralProperty .
+
+<https://astrea.linkeddata.es/shapes#d7d4289d2468461fa170eb3466c479d5> a sh:PropertyShape ;
+    rdfs:label "(expected) end date"@en,
+        "The end date and time of a planned incidence (in ISO 8601 date format)."@en,
+        """La fecha y hora prevista de
+	finalización de una incidencia planificada (en formato fecha ISO 8601)"""@es,
+        "fecha de fin (prevista)"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The end date and time of a planned incidence (in ISO 8601 date format)."@en,
+        """La fecha y hora prevista de
+	finalización de una incidencia planificada (en formato fecha ISO 8601)"""@es ;
+    sh:name "(expected) end date"@en,
+        "fecha de fin (prevista)"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:expectedEndDate ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#d935c1c52c1b4e6a4eb06ad308910bb1> a sh:PropertyShape ;
+    rdfs:label "A document where more information about the incidence can be found."@en,
+        "attached to incidence"@en,
+        "Un documento donde se puede consultar la información sobre la incidencia."@es,
+        "adjunto a la incidencia"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:datatype xsd:anyURI ;
+    sh:description "A document where more information about the incidence can be found."@en,
+        "Un documento donde se puede consultar la información sobre la incidencia."@es ;
+    sh:name "attached to incidence"@en,
+        "adjunto a la incidencia"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:incidenceAttachment ;
+    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+<https://astrea.linkeddata.es/shapes#de7f46aa7197553c2a5de8952fdfe0b8> a sh:PropertyShape ;
+    rdfs:label "Monitors"@en,
+        "Relationship between Traffic Equipment and the Section it monitors"@en,
+        "Monitorea"@es,
+        "Relación del Equipo de Tráfico con el Tramo que monitorea"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:class edinttraf:StreetSection ;
+    sh:description "Relationship between Traffic Equipment and the Section it monitors"@en,
+        "Relación del Equipo de Tráfico con el Tramo que monitorea"@es ;
+    sh:maxCount 1 ;
+    sh:name "Monitors"@en,
+        "Monitorea"@es ;
+    sh:path edinttraf:monitors .
+
+<https://astrea.linkeddata.es/shapes#dfc1a249d92ffcc29afe9a80bb567052> a sh:PropertyShape ;
+    rdfs:label "Relationship between the management role exercised by an organization and the infrastructure element on which the management is carried out."@en,
+        "made on an infrastructure element"@en,
+        "Relación entre el rol de gestion que ejerce una organización  y el elemento de infraestructura sobre el cual se realiza la gestión."@es,
+        "realizado sobre elemento de infraestructura"@es ;
+    sh:class :InfrastructureElement ;
+    sh:description "Relationship between the management role exercised by an organization and the infrastructure element on which the management is carried out."@en,
+        "Relación entre el rol de gestion que ejerce una organización  y el elemento de infraestructura sobre el cual se realiza la gestión."@es ;
+    sh:name "made on an infrastructure element"@en,
+        "realizado sobre elemento de infraestructura"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :madeOnInfrastructure .
+
+<https://astrea.linkeddata.es/shapes#edefab4c5a6c7f1298adbe7978c527d5> a sh:PropertyShape ;
+    rdfs:label "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'."@en,
+        "opening hours"@en,
+        "Horario general de apertura de un negocio. El horario se puede especificar como un rango semanal, comenzando por días y luego por horas al día. Se pueden indicar varios días separados por comas (\",\"). Los rangos de días u horas se especifican con un guion (-)."@es,
+        "horario de apertura"@es ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    sh:datatype xsd:string ;
+    sh:description "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'."@en,
+        "Horario general de apertura de un negocio. El horario se puede especificar como un rango semanal, comenzando por días y luego por horas al día. Se pueden indicar varios días separados por comas (\",\"). Los rangos de días u horas se especifican con un guion (-)."@es ;
+    sh:name "opening hours"@en,
+        "horario de apertura"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema1:openingHours ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#f148dceb1c2ff8cf72640abbf24c0ba9> a sh:PropertyShape ;
+    rdfs:label "A  facility may contain other facilities. For example, a cultural center may contain exhibition halls, auditoriums, etc."@en,
+        "contains facility"@en,
+        "Un equipamiento  puede contener otros equipamientos. Por ejemplo, un centro cultural puede contener salas de exposición, auditorios, etc."@es,
+        "contiene equipamiento"@es ;
+    sh:class :Facility ;
+    sh:description "A  facility may contain other facilities. For example, a cultural center may contain exhibition halls, auditoriums, etc."@en,
+        "Un equipamiento  puede contener otros equipamientos. Por ejemplo, un centro cultural puede contener salas de exposición, auditorios, etc."@es ;
+    sh:name "contains facility"@en,
+        "contiene equipamiento"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :containsFacility .
+
+<https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220> a sh:PropertyShape ;
+    rdfs:label "made by sensor or observer"@en,
+        "Relación entre una observación y el sensor que realiza la observación."@es,
+        "realizado por sensor u observador"@es ;
+    rdfs:isDefinedBy sosa: ;
+    sh:class sosa:Sensor ;
+    sh:description "Relación entre una observación y el sensor que realiza la observación."@es ;
+    sh:name "made by sensor or observer"@en,
+        "realizado por sensor u observador"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path sosa:madeBySensor .
+
+<https://astrea.linkeddata.es/shapes#f5a33cb6c2dd457969967849267ed5e2> a sh:PropertyShape ;
+    rdfs:label "Relationship of the section with the point where it starts."@en,
+        "start of section"@en,
+        "Relación del tramo con el lugar donde se inicia el tramo."@es,
+        "inicio del tramo"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:class <http://www.opengis.net/ont/sf#Point> ;
+    sh:description "Relationship of the section with the point where it starts."@en,
+        "Relación del tramo con el lugar donde se inicia el tramo."@es ;
+    sh:maxCount 1 ;
+    sh:name "start of section"@en,
+        "inicio del tramo"@es ;
+    sh:path edinttraf:startOfSection .
+
+<https://astrea.linkeddata.es/shapes#fea379c748c9dad4793c340bbcb92040> a sh:PropertyShape ;
+    rdfs:label "yETRS89",
+        "Y-Coordinate in meters (ETRS89)"@en,
+        "Coordenada Y en metros (ETRS89)"@es ;
+    rdfs:isDefinedBy <https://datos.ign.es/def/geo_core#> ;
+    sh:datatype xsd:float ;
+    sh:description "Y-Coordinate in meters (ETRS89)"@en,
+        "Coordenada Y en metros (ETRS89)"@es ;
+    sh:name "yETRS89" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://datos.ign.es/def/geo_core#yETRS89> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#551747742347c65a3a417153b3f20a07> sh:class edinttraf:TrafficEquipment .
+
+<https://astrea.linkeddata.es/shapes#88d50e1fd6d06812076022366fd5092e> a sh:PropertyShape ;
+    rdfs:label "Number of directions of traffic"@en,
+        "Street directions"@en,
+        "Número de sentidos de circulación"@es,
+        "Sentidos de circulación"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/trafico> ;
+    sh:datatype xsd:integer ;
+    sh:description "Number of directions of traffic"@en,
+        "Número de sentidos de circulación"@es ;
+    sh:name "Street directions"@en,
+        "Sentidos de circulación"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path edinttraf:numDirections ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> a sh:PropertyShape ;
+    rdfs:label "The manufacturer of the product."@en,
+        "manufacturer"@en,
+        "El fabricante del producto."@es,
+        "fabricante"@es ;
+    rdfs:isDefinedBy schema1: ;
+    sh:class schema:Organization ;
+    sh:description "The manufacturer of the product."@en,
+        "El fabricante del producto."@es ;
+    sh:name "manufacturer"@en,
+        "fabricante"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema1:manufacturer .
+
